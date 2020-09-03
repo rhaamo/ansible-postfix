@@ -48,3 +48,9 @@ enable_postifx_dkim: false
 enable_smtp_helo_name: false
 postfix_smtp_helo_name: "{{ ansible_fqdn }}"
 enable_always_add_missing_headers: false
+
+# Group for configuration files
+postfix_config_group: root
+
+# Path to binaries
+postfix_postmap_path: postmap
